@@ -1,0 +1,7 @@
+{
+  "name": "trabajopractico3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

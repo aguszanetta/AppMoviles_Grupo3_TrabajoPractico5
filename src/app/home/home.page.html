@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>Lista de Personajes de Rick y Morty</ion-title>
+    </ion-toolbar>
+</ion-header>
+<!--
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col sizeMd="4" offsetMd="4">
+                <ion-list>
+                    <ion-item *ngFor="let jugador of jugadores">
+                        <ion-avatar slot="start">
+                            <img src="{{jugador.player_image}}">
+                        </ion-avatar>
+                        <ion-label>{{jugador.player_name}}</ion-label>
+                        <ion-button color="danger" (click)="eliminar(jugador)">Eliminar</ion-button>
+                        <ion-button color="primary" (click)="verDetalle(jugador.player_key)">Ver</ion-button>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+-->
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col sizeMd="4" offsetMd="4">
+                <ion-list>
+                    <ion-item *ngFor="let personaje of personajes">
+                        <ion-avatar slot="start">
+                            <img src="{{personaje.image}}">
+                        </ion-avatar>
+                        <ion-label>{{personaje.name}}</ion-label>
+                        <ion-button color="danger" (click)="eliminar(personaje)">Eliminar</ion-button>
+                        <ion-button color="primary" (click)="verDetalle(personaje.id)">Ver</ion-button>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

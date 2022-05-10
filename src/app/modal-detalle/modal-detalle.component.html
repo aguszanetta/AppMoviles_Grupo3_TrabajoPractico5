@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Detalle
+        </ion-title>
+        <ion-button slot="primary">
+            <ion-button (click)="dismissModal()">Cerrar</ion-button>
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col sizeMd="4" offsetMd="4">
+                <div *ngIf="personaje">
+                    <ion-card>
+                        <ion-card-content>
+                            <img src="{{personaje.image}}" alt="">
+                            <ion-card-title>
+                                {{personaje.name}}
+                            </ion-card-title>
+                            <p>Género: {{personaje.gender}}</p>
+                            <p>Especie: {{personaje.species}}</p>
+                        </ion-card-content>
+                    </ion-card>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
